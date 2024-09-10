@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-page",
     "pluralName": "main-pages",
-    "displayName": "mainPage"
+    "displayName": "mainPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,9 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "hero.hero"
+        "hero.hero",
+        "highlight-heading.highlight-heading",
+        "socials.socials"
       ]
     }
   }

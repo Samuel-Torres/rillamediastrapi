@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_icon_aside_icon_asides",
+  "info": {
+    "displayName": "IconAside",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "isRow": {
+      "type": "boolean",
+      "default": true
+    },
+    "iconImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

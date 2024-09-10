@@ -2,22 +2,36 @@
   "collectionName": "components_hero_heroes",
   "info": {
     "displayName": "hero",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string"
-    },
     "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "highlightedText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "highlight-heading.highlight-heading"
+    },
+    "socialMediaList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media-list.social-media-list"
+    },
+    "numberAside": {
+      "type": "component",
+      "repeatable": false,
+      "component": "icon-aside.icon-aside"
     }
   }
 }

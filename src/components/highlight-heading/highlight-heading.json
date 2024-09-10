@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_highlight_heading_highlight_headings",
+  "info": {
+    "displayName": "highlightHeading",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "firstText": {
+      "type": "string"
+    },
+    "highlightedText": {
+      "type": "string"
+    },
+    "remainingText": {
+      "type": "string"
+    }
+  }
+}
