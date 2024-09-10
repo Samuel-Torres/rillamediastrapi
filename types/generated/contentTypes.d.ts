@@ -368,12 +368,15 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
     singularName: 'main-page';
     pluralName: 'main-pages';
     displayName: 'mainPage';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    sections: Attribute.DynamicZone<['hero.hero']>;
+    sections: Attribute.DynamicZone<
+      ['hero.hero', 'highlight-heading.highlight-heading', 'socials.socials']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_socials_socials",
+  "info": {
+    "displayName": "socials",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "socialMediaList": {
+      "displayName": "socialMediaList",
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media-list.social-media-list"
+    }
+  }
+}
