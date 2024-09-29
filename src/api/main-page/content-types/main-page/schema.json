@@ -17,7 +17,8 @@
       "components": [
         "hero.hero",
         "highlight-heading.highlight-heading",
-        "socials.socials"
+        "socials.socials",
+        "social-media-links.social-media-links"
       ]
     }
   }

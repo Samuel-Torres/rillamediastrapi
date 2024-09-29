@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_social_media_links_social_media_links",
+  "info": {
+    "displayName": "socialMediaLinks",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "imageSrc": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

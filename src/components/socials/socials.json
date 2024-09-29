@@ -2,15 +2,16 @@
   "collectionName": "components_socials_socials",
   "info": {
     "displayName": "socials",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "socialMediaList": {
-      "displayName": "socialMediaList",
+    "socialMediaLinks": {
+      "displayName": "socialMediaLinks",
       "type": "component",
       "repeatable": true,
-      "component": "social-media-list.social-media-list"
+      "component": "social-media-links.social-media-links"
     }
   }
 }
