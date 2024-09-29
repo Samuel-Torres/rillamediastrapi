@@ -5,25 +5,26 @@ export interface SocialsSocials extends Schema.Component {
   info: {
     displayName: 'socials';
     icon: 'apps';
+    description: '';
   };
   attributes: {
-    socialMediaList: Attribute.Component<
-      'social-media-list.social-media-list',
+    socialMediaLinks: Attribute.Component<
+      'social-media-links.social-media-links',
       true
     >;
   };
 }
 
-export interface SocialMediaListSocialMediaList extends Schema.Component {
-  collectionName: 'components_social_media_list_social_media_lists';
+export interface SocialMediaLinksSocialMediaLinks extends Schema.Component {
+  collectionName: 'components_social_media_links_social_media_links';
   info: {
-    displayName: 'socialMediaList';
-    icon: 'apps';
+    displayName: 'socialMediaLinks';
+    icon: 'attachment';
   };
   attributes: {
-    image: Attribute.Media<'images'>;
     href: Attribute.String;
-    altText: Attribute.String;
+    alt: Attribute.String;
+    imageSrc: Attribute.Media<'images'>;
   };
 }
 
@@ -63,11 +64,8 @@ export interface HeroHero extends Schema.Component {
   attributes: {
     heroImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     highlightedText: Attribute.Component<'highlight-heading.highlight-heading'>;
-    socialMediaList: Attribute.Component<
-      'social-media-list.social-media-list',
-      true
-    >;
     numberAside: Attribute.Component<'icon-aside.icon-aside'>;
+    sellingPoint: Attribute.Text;
   };
 }
 
@@ -75,7 +73,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'socials.socials': SocialsSocials;
-      'social-media-list.social-media-list': SocialMediaListSocialMediaList;
+      'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
       'icon-aside.icon-aside': IconAsideIconAside;
       'highlight-heading.highlight-heading': HighlightHeadingHighlightHeading;
       'hero.hero': HeroHero;

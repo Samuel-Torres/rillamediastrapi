@@ -23,15 +23,13 @@
       "repeatable": false,
       "component": "highlight-heading.highlight-heading"
     },
-    "socialMediaList": {
-      "type": "component",
-      "repeatable": true,
-      "component": "social-media-list.social-media-list"
-    },
     "numberAside": {
       "type": "component",
       "repeatable": false,
       "component": "icon-aside.icon-aside"
+    },
+    "sellingPoint": {
+      "type": "text"
     }
   }
 }

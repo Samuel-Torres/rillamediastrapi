@@ -375,7 +375,12 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
   };
   attributes: {
     sections: Attribute.DynamicZone<
-      ['hero.hero', 'highlight-heading.highlight-heading', 'socials.socials']
+      [
+        'hero.hero',
+        'highlight-heading.highlight-heading',
+        'socials.socials',
+        'social-media-links.social-media-links'
+      ]
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
