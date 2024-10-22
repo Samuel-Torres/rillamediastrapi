@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_double_highlight_heading_double_highlight_headings",
+  "info": {
+    "displayName": "doubleHighlightHeading",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "highlightOne": {
+      "type": "string"
+    },
+    "textOne": {
+      "type": "string"
+    },
+    "highlightTwo": {
+      "type": "string"
+    },
+    "textTwo": {
+      "type": "string"
+    }
+  }
+}
