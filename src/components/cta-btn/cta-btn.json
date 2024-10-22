@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_cta_btn_cta_btns",
+  "info": {
+    "displayName": "ctaBtn",
+    "icon": "medium"
+  },
+  "options": {},
+  "attributes": {
+    "ctaText": {
+      "type": "string"
+    },
+    "routeDestination": {
+      "type": "string"
+    },
+    "borderColor": {
+      "type": "string"
+    },
+    "initialFontColor": {
+      "type": "string"
+    }
+  }
+}

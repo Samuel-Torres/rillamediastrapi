@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_headling_aside_headling_asides",
+  "info": {
+    "displayName": "headlingAside",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "dblHighlightHeading": {
+      "displayName": "doubleHighlightHeading",
+      "type": "component",
+      "repeatable": false,
+      "component": "double-highlight-heading.double-highlight-heading"
+    },
+    "AsideHeading": {
+      "type": "string"
+    },
+    "TextBody": {
+      "type": "text"
+    },
+    "ctaBtn": {
+      "displayName": "ctaBtn",
+      "type": "component",
+      "repeatable": false,
+      "component": "cta-btn.cta-btn"
+    }
+  }
+}

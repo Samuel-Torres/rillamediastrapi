@@ -379,7 +379,11 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
         'hero.hero',
         'highlight-heading.highlight-heading',
         'socials.socials',
-        'social-media-links.social-media-links'
+        'social-media-links.social-media-links',
+        'icon-aside.icon-aside',
+        'headling-aside.headling-aside',
+        'double-highlight-heading.double-highlight-heading',
+        'cta-btn.cta-btn'
       ]
     >;
     createdAt: Attribute.DateTime;

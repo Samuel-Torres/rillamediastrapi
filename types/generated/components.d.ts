@@ -69,6 +69,49 @@ export interface HeroHero extends Schema.Component {
   };
 }
 
+export interface HeadlingAsideHeadlingAside extends Schema.Component {
+  collectionName: 'components_headling_aside_headling_asides';
+  info: {
+    displayName: 'headlingAside';
+    icon: 'archive';
+  };
+  attributes: {
+    dblHighlightHeading: Attribute.Component<'double-highlight-heading.double-highlight-heading'>;
+    AsideHeading: Attribute.String;
+    TextBody: Attribute.Text;
+    ctaBtn: Attribute.Component<'cta-btn.cta-btn'>;
+  };
+}
+
+export interface DoubleHighlightHeadingDoubleHighlightHeading
+  extends Schema.Component {
+  collectionName: 'components_double_highlight_heading_double_highlight_headings';
+  info: {
+    displayName: 'doubleHighlightHeading';
+    icon: 'arrowRight';
+  };
+  attributes: {
+    highlightOne: Attribute.String;
+    textOne: Attribute.String;
+    highlightTwo: Attribute.String;
+    textTwo: Attribute.String;
+  };
+}
+
+export interface CtaBtnCtaBtn extends Schema.Component {
+  collectionName: 'components_cta_btn_cta_btns';
+  info: {
+    displayName: 'ctaBtn';
+    icon: 'medium';
+  };
+  attributes: {
+    ctaText: Attribute.String;
+    routeDestination: Attribute.String;
+    borderColor: Attribute.String;
+    initialFontColor: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -77,6 +120,9 @@ declare module '@strapi/types' {
       'icon-aside.icon-aside': IconAsideIconAside;
       'highlight-heading.highlight-heading': HighlightHeadingHighlightHeading;
       'hero.hero': HeroHero;
+      'headling-aside.headling-aside': HeadlingAsideHeadlingAside;
+      'double-highlight-heading.double-highlight-heading': DoubleHighlightHeadingDoubleHighlightHeading;
+      'cta-btn.cta-btn': CtaBtnCtaBtn;
     }
   }
 }
