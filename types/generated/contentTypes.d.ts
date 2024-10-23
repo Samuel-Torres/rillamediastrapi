@@ -383,7 +383,9 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
         'icon-aside.icon-aside',
         'headling-aside.headling-aside',
         'double-highlight-heading.double-highlight-heading',
-        'cta-btn.cta-btn'
+        'cta-btn.cta-btn',
+        'service-list.service-list',
+        'service-card.service-card'
       ]
     >;
     createdAt: Attribute.DateTime;
