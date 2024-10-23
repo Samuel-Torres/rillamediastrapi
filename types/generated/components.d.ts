@@ -28,6 +28,36 @@ export interface SocialMediaLinksSocialMediaLinks extends Schema.Component {
   };
 }
 
+export interface ServiceListServiceList extends Schema.Component {
+  collectionName: 'components_service_list_service_lists';
+  info: {
+    displayName: 'serviceList';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    serviceCard: Attribute.Component<'service-card.service-card', true>;
+  };
+}
+
+export interface ServiceCardServiceCard extends Schema.Component {
+  collectionName: 'components_service_card_service_cards';
+  info: {
+    displayName: 'serviceCard';
+    icon: 'puzzle';
+    description: '';
+  };
+  attributes: {
+    iconImage: Attribute.Media<'images'>;
+    title: Attribute.Text;
+    subheading: Attribute.Text;
+    bulletOne: Attribute.Text;
+    bulletTwo: Attribute.Text;
+    bulletThree: Attribute.Text;
+    alt: Attribute.Text;
+  };
+}
+
 export interface IconAsideIconAside extends Schema.Component {
   collectionName: 'components_icon_aside_icon_asides';
   info: {
@@ -117,6 +147,8 @@ declare module '@strapi/types' {
     export interface Components {
       'socials.socials': SocialsSocials;
       'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
+      'service-list.service-list': ServiceListServiceList;
+      'service-card.service-card': ServiceCardServiceCard;
       'icon-aside.icon-aside': IconAsideIconAside;
       'highlight-heading.highlight-heading': HighlightHeadingHighlightHeading;
       'hero.hero': HeroHero;

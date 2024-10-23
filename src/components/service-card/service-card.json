@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_service_card_service_cards",
+  "info": {
+    "displayName": "serviceCard",
+    "icon": "puzzle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "bulletOne": {
+      "type": "text"
+    },
+    "bulletTwo": {
+      "type": "text"
+    },
+    "bulletThree": {
+      "type": "text"
+    },
+    "alt": {
+      "type": "text"
+    }
+  }
+}

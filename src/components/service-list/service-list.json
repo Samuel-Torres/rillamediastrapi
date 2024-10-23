@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_service_list_service_lists",
+  "info": {
+    "displayName": "serviceList",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "serviceCard": {
+      "displayName": "serviceCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "service-card.service-card"
+    }
+  }
+}
