@@ -32,6 +32,9 @@
     },
     "alt": {
       "type": "text"
+    },
+    "sellingPoint": {
+      "type": "text"
     }
   }
 }
