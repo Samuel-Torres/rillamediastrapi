@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_bullet_point_bullet_points",
+  "info": {
+    "displayName": "bullet-point",
+    "icon": "emotionHappy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bullet": {
+      "type": "text"
+    },
+    "iconIsVisible": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
