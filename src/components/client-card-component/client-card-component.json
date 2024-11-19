@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_client_card_component_client_card_components",
+  "info": {
+    "displayName": "clientCardComponent",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "companyName": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "alt": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "websiteUrl": {
+      "type": "string"
+    }
+  }
+}

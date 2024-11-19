@@ -1,14 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface ServiceListServiceList extends Schema.Component {
-  collectionName: 'components_service_list_service_lists';
+export interface SocialsSocials extends Schema.Component {
+  collectionName: 'components_socials_socials';
   info: {
-    displayName: 'serviceList';
+    displayName: 'socials';
     icon: 'apps';
     description: '';
   };
   attributes: {
-    serviceCard: Attribute.Component<'service-card.service-card', true>;
+    socialMediaLinks: Attribute.Component<
+      'social-media-links.social-media-links',
+      true
+    >;
   };
 }
 
@@ -25,18 +28,15 @@ export interface SocialMediaLinksSocialMediaLinks extends Schema.Component {
   };
 }
 
-export interface SocialsSocials extends Schema.Component {
-  collectionName: 'components_socials_socials';
+export interface ServiceListServiceList extends Schema.Component {
+  collectionName: 'components_service_list_service_lists';
   info: {
-    displayName: 'socials';
+    displayName: 'serviceList';
     icon: 'apps';
     description: '';
   };
   attributes: {
-    socialMediaLinks: Attribute.Component<
-      'social-media-links.social-media-links',
-      true
-    >;
+    serviceCard: Attribute.Component<'service-card.service-card', true>;
   };
 }
 
@@ -56,6 +56,20 @@ export interface ServiceCardServiceCard extends Schema.Component {
     bulletThree: Attribute.Text;
     alt: Attribute.Text;
     sellingPoint: Attribute.Text;
+  };
+}
+
+export interface PastClientListPastClientList extends Schema.Component {
+  collectionName: 'components_past_client_list_past_client_lists';
+  info: {
+    displayName: 'pastClientList';
+    icon: 'filter';
+  };
+  attributes: {
+    companyCard: Attribute.Component<
+      'client-card-component.client-card-component',
+      true
+    >;
   };
 }
 
@@ -122,6 +136,7 @@ export interface HeroHero extends Schema.Component {
     highlightedText: Attribute.Component<'highlight-heading.highlight-heading'>;
     numberAside: Attribute.Component<'icon-aside.icon-aside'>;
     sellingPoint: Attribute.Text;
+    socials: Attribute.Component<'social-media-links.social-media-links', true>;
   };
 }
 
@@ -192,6 +207,25 @@ export interface ContactFormContactForm extends Schema.Component {
   };
 }
 
+export interface ClientCardComponentClientCardComponent
+  extends Schema.Component {
+  collectionName: 'components_client_card_component_client_card_components';
+  info: {
+    displayName: 'clientCardComponent';
+    icon: 'calendar';
+    description: '';
+  };
+  attributes: {
+    companyName: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
+    alt: Attribute.String;
+    logo: Attribute.Media<'images', true>;
+    websiteUrl: Attribute.String;
+  };
+}
+
 export interface BulletPointBulletPoint extends Schema.Component {
   collectionName: 'components_bullet_point_bullet_points';
   info: {
@@ -208,10 +242,11 @@ export interface BulletPointBulletPoint extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'service-list.service-list': ServiceListServiceList;
-      'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
       'socials.socials': SocialsSocials;
+      'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
+      'service-list.service-list': ServiceListServiceList;
       'service-card.service-card': ServiceCardServiceCard;
+      'past-client-list.past-client-list': PastClientListPastClientList;
       'info-cards-list.info-cards-list': InfoCardsListInfoCardsList;
       'info-card.info-card': InfoCardInfoCard;
       'icon-aside.icon-aside': IconAsideIconAside;
@@ -222,6 +257,7 @@ declare module '@strapi/types' {
       'double-highlight-heading.double-highlight-heading': DoubleHighlightHeadingDoubleHighlightHeading;
       'cta-btn.cta-btn': CtaBtnCtaBtn;
       'contact-form.contact-form': ContactFormContactForm;
+      'client-card-component.client-card-component': ClientCardComponentClientCardComponent;
       'bullet-point.bullet-point': BulletPointBulletPoint;
     }
   }

@@ -30,6 +30,11 @@
     },
     "sellingPoint": {
       "type": "text"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media-links.social-media-links"
     }
   }
 }
