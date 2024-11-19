@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_form_contact_forms",
+  "info": {
+    "displayName": "contactForm",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_heading_bullets_heading_bullets",
+  "info": {
+    "displayName": "heading-bullets",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "bullet": {
+      "displayName": "bullet-point",
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet-point.bullet-point"
+    }
+  }
+}

@@ -1,17 +1,14 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface SocialsSocials extends Schema.Component {
-  collectionName: 'components_socials_socials';
+export interface ServiceListServiceList extends Schema.Component {
+  collectionName: 'components_service_list_service_lists';
   info: {
-    displayName: 'socials';
+    displayName: 'serviceList';
     icon: 'apps';
     description: '';
   };
   attributes: {
-    socialMediaLinks: Attribute.Component<
-      'social-media-links.social-media-links',
-      true
-    >;
+    serviceCard: Attribute.Component<'service-card.service-card', true>;
   };
 }
 
@@ -25,6 +22,21 @@ export interface SocialMediaLinksSocialMediaLinks extends Schema.Component {
     href: Attribute.String;
     alt: Attribute.String;
     imageSrc: Attribute.Media<'images'>;
+  };
+}
+
+export interface SocialsSocials extends Schema.Component {
+  collectionName: 'components_socials_socials';
+  info: {
+    displayName: 'socials';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    socialMediaLinks: Attribute.Component<
+      'social-media-links.social-media-links',
+      true
+    >;
   };
 }
 
@@ -47,15 +59,28 @@ export interface ServiceCardServiceCard extends Schema.Component {
   };
 }
 
-export interface ServiceListServiceList extends Schema.Component {
-  collectionName: 'components_service_list_service_lists';
+export interface InfoCardsListInfoCardsList extends Schema.Component {
+  collectionName: 'components_info_cards_list_info_cards_lists';
   info: {
-    displayName: 'serviceList';
-    icon: 'apps';
+    displayName: 'infoCardsList';
+    icon: 'bulletList';
+  };
+  attributes: {
+    infoCard: Attribute.Component<'info-card.info-card', true>;
+  };
+}
+
+export interface InfoCardInfoCard extends Schema.Component {
+  collectionName: 'components_info_card_info_cards';
+  info: {
+    displayName: 'infoCard';
+    icon: 'bulletList';
     description: '';
   };
   attributes: {
-    serviceCard: Attribute.Component<'service-card.service-card', true>;
+    heading: Attribute.Text;
+    iconImage: Attribute.Media<'images'>;
+    bullets: Attribute.Component<'bullet-point.bullet-point', true>;
   };
 }
 
@@ -114,6 +139,19 @@ export interface HeadlingAsideHeadlingAside extends Schema.Component {
   };
 }
 
+export interface HeadingBulletsHeadingBullets extends Schema.Component {
+  collectionName: 'components_heading_bullets_heading_bullets';
+  info: {
+    displayName: 'heading-bullets';
+    icon: 'filter';
+  };
+  attributes: {
+    heading: Attribute.String;
+    subheading: Attribute.String;
+    bullet: Attribute.Component<'bullet-point.bullet-point', true>;
+  };
+}
+
 export interface DoubleHighlightHeadingDoubleHighlightHeading
   extends Schema.Component {
   collectionName: 'components_double_highlight_heading_double_highlight_headings';
@@ -143,19 +181,48 @@ export interface CtaBtnCtaBtn extends Schema.Component {
   };
 }
 
+export interface ContactFormContactForm extends Schema.Component {
+  collectionName: 'components_contact_form_contact_forms';
+  info: {
+    displayName: 'contactForm';
+    icon: 'pencil';
+  };
+  attributes: {
+    Heading: Attribute.String;
+  };
+}
+
+export interface BulletPointBulletPoint extends Schema.Component {
+  collectionName: 'components_bullet_point_bullet_points';
+  info: {
+    displayName: 'bullet-point';
+    icon: 'emotionHappy';
+    description: '';
+  };
+  attributes: {
+    bullet: Attribute.Text;
+    iconIsVisible: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'socials.socials': SocialsSocials;
-      'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
-      'service-card.service-card': ServiceCardServiceCard;
       'service-list.service-list': ServiceListServiceList;
+      'social-media-links.social-media-links': SocialMediaLinksSocialMediaLinks;
+      'socials.socials': SocialsSocials;
+      'service-card.service-card': ServiceCardServiceCard;
+      'info-cards-list.info-cards-list': InfoCardsListInfoCardsList;
+      'info-card.info-card': InfoCardInfoCard;
       'icon-aside.icon-aside': IconAsideIconAside;
       'highlight-heading.highlight-heading': HighlightHeadingHighlightHeading;
       'hero.hero': HeroHero;
       'headling-aside.headling-aside': HeadlingAsideHeadlingAside;
+      'heading-bullets.heading-bullets': HeadingBulletsHeadingBullets;
       'double-highlight-heading.double-highlight-heading': DoubleHighlightHeadingDoubleHighlightHeading;
       'cta-btn.cta-btn': CtaBtnCtaBtn;
+      'contact-form.contact-form': ContactFormContactForm;
+      'bullet-point.bullet-point': BulletPointBulletPoint;
     }
   }
 }

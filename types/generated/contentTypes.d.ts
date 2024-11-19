@@ -362,7 +362,7 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiMainPageMainPage extends Schema.CollectionType {
+export interface ApiMainPageMainPage extends Schema.SingleType {
   collectionName: 'main_pages';
   info: {
     singularName: 'main-page';
@@ -385,7 +385,12 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
         'double-highlight-heading.double-highlight-heading',
         'cta-btn.cta-btn',
         'service-list.service-list',
-        'service-card.service-card'
+        'service-card.service-card',
+        'heading-bullets.heading-bullets',
+        'bullet-point.bullet-point',
+        'contact-form.contact-form',
+        'info-cards-list.info-cards-list',
+        'info-card.info-card'
       ]
     >;
     createdAt: Attribute.DateTime;

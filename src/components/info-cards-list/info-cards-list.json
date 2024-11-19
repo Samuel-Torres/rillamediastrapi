@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_info_cards_list_info_cards_lists",
+  "info": {
+    "displayName": "infoCardsList",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "infoCard": {
+      "displayName": "infoCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "info-card.info-card"
+    }
+  }
+}
