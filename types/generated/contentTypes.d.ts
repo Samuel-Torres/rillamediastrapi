@@ -390,7 +390,9 @@ export interface ApiMainPageMainPage extends Schema.SingleType {
         'bullet-point.bullet-point',
         'contact-form.contact-form',
         'info-cards-list.info-cards-list',
-        'info-card.info-card'
+        'info-card.info-card',
+        'past-client-list.past-client-list',
+        'client-card-component.client-card-component'
       ]
     >;
     createdAt: Attribute.DateTime;

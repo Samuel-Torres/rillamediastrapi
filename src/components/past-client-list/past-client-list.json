@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_past_client_list_past_client_lists",
+  "info": {
+    "displayName": "pastClientList",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "companyCard": {
+      "displayName": "clientCardComponent",
+      "type": "component",
+      "repeatable": true,
+      "component": "client-card-component.client-card-component"
+    }
+  }
+}
