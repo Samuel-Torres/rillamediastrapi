@@ -35,6 +35,11 @@
       "type": "component",
       "repeatable": true,
       "component": "social-media-links.social-media-links"
+    },
+    "clientList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "client-card-component.client-card-component"
     }
   }
 }

@@ -137,6 +137,10 @@ export interface HeroHero extends Schema.Component {
     numberAside: Attribute.Component<'icon-aside.icon-aside'>;
     sellingPoint: Attribute.Text;
     socials: Attribute.Component<'social-media-links.social-media-links', true>;
+    clientList: Attribute.Component<
+      'client-card-component.client-card-component',
+      true
+    >;
   };
 }
 
@@ -223,6 +227,7 @@ export interface ClientCardComponentClientCardComponent
     alt: Attribute.String;
     logo: Attribute.Media<'images', true>;
     websiteUrl: Attribute.String;
+    className: Attribute.String;
   };
 }
 

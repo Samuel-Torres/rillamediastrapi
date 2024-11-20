@@ -24,6 +24,9 @@
     },
     "websiteUrl": {
       "type": "string"
+    },
+    "className": {
+      "type": "string"
     }
   }
 }
